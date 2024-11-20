@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    shard1:
+      url : jdbc:mysql://localhost:3306/shard1
+      username : root
+      password : pwd
+      driver-class-name : com.mysql.cj.jdbc.Driver
+      hikari:
+        maximum-pool-size: 20
+        minimum-idle: 5
+    shard2:
+        url : jdbc:mysql://localhost:3306/shard2
+        username : root
+        password : pwd
+        driver-class-name : com.mysql.cj.jdbc.Driver
+        hikari:
+          maximum-pool-size: 20
+          minimum-idle: 5
